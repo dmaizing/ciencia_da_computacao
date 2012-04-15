@@ -12,6 +12,7 @@ de B.
 int main()
 {
 	int a[12],b[12],i;
+	printf("Este programa prentende capturar 12 elementos A e construir 12 elementos B sendo que pra cada elemento A impar o correspondente B sera multiplicado por 2 e os elementos pares de A serao identicos ao correspondente B.\n\n\n");
 	for(i=0;i<=11;i++){
 		printf("Digite o valor de A[%d]",i+1);
 		scanf("%d",&a[i]);

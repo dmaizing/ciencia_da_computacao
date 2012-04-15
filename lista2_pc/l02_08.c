@@ -11,6 +11,7 @@ Apresente os elementos de C.
 int main()
 {
 	int i,a[10],b[10],c[10];
+	printf("Este programa prentende capturar 10 elementos de A e B e construir 10 elementos C=(A+B)*(A+B).\n\n\n");
 	for(i=0;i<=9;i++){
 		printf("Digite o valor de A[%d] = ",i+1);
 		scanf("%d",&a[i]);

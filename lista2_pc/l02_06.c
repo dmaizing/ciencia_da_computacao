@@ -9,7 +9,8 @@ elementos do vetor A .
 
 int main(){
 	int i,a[10],n;
-	printf("Digite um valor inteiro para ver sua tabuada de 1 a 10 = ");
+	printf("Este programa prentende capturar 1 elemento e mostrar sua tabuada de 1 a 10.\n\n\n");
+	printf("Digite um valor inteiro=");
 	scanf("%d",&n);
 	for(i=0;i<=9;i++){
 		a[i]=n*(i+1);

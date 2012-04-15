@@ -10,14 +10,14 @@ int main()
 {
 	float a[10],soma,media;
 	int i;
+	printf("Este programa prentende capturar 10 elementos, calcular a soma destes e apresentar o resultado e a media do mesmo.\n\n\n");
 	for(i=0;i<=9;i++){
 		printf("Digite o valor de A[%i]=",i+1);
 		scanf("%f",&a[i]);
 		soma=soma+a[i];
-		sub=sub-a[i];
 	}
-	printf("Resultado SOMA=%f\n",soma);
+	printf("\nResultado SOMA = %f\n",soma);
 	media=soma/2;
-	printf("Resultado MEDIA=%f\n",media);
+	printf("\nResultado MEDIA = %f\n",media);
 	return 0;
 }
