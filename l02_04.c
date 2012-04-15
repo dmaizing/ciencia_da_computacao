@@ -12,9 +12,9 @@ int main(){
 	int i,a[10],b[10],c[10];
 	sc=0;
 	for(i=0;i<=9;i++){
-		printf("Digite o valor de A[%d]=",i);
+		printf("Digite o valor de A[%d]=",i+1);
 		scanf("%d",&a[i]);
-		printf("Digite o valor de B[%d]=",i);
+		printf("Digite o valor de B[%d]=",i+1);
 		scanf("%d",&b[i]);
 		c[i]=a[i]*b[i];
 		sc=sc+c[i];

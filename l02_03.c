@@ -13,14 +13,14 @@ int main(){
 	int i;
 	for(i=0;i<=9;i++){
 		x=0;
-		printf("Digite o valor de A[%d]=",i);
+		printf("Digite o valor de A[%d]=",i+1);
 		scanf("%f",&a[i]);
-		printf("Digite o valor de B[%d]=",i);
+		printf("Digite o valor de B[%d]=",i+1);
 		scanf("%f",&b[i]);
 		c[i]=(a[i]+b[i])*(a[i]+b[i]);
 		}
 	for(i=0;i<=9;i++){
-		printf("O valor de C[%d]=%f\n",i,c[i]);
+		printf("O valor de C[%d]=%f\n",i+1,c[i]);
 		}
 	return 0;
 }

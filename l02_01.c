@@ -11,7 +11,7 @@ int main()
 	float a[10],soma,media;
 	int i;
 	for(i=0;i<=9;i++){
-		printf("Digite o valor de A[%i]=",i);
+		printf("Digite o valor de A[%i]=",i+1);
 		scanf("%f",&a[i]);
 		soma=soma+a[i];
 		sub=sub-a[i];
