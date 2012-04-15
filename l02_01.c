@@ -8,7 +8,7 @@ e a média dos 10 elementos, apresentando o resultado.
 
 int main()
 {
-	float a[10],soma,media,sub;
+	float a[10],soma,media;
 	int i;
 	for(i=0;i<=9;i++){
 		printf("Digite o valor de A[%i]=",i);
@@ -17,7 +17,6 @@ int main()
 		sub=sub-a[i];
 	}
 	printf("Resultado SOMA=%f\n",soma);
-	printf("Resultado SUB=%f\n",sub);
 	media=soma/2;
 	printf("Resultado MEDIA=%f\n",media);
 	return 0;
