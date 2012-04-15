@@ -1,4 +1,4 @@
-# 2ª Lista de Prática de Programação: Vetores #
+# 2ª Lista de Prática de Programação em C: Vetores #
 
 ## prof. Dariel Mazzoni Maranhão ##
 
