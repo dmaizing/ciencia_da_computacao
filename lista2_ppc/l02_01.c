@@ -1,3 +1,4 @@
+//Exercício 1
 #include<stdio.h> 
 #include<stdlib.h>
 
@@ -21,3 +22,4 @@ int main()
 	printf("\nResultado MEDIA = %f\n",media);
 	return 0;
 }
+//Fim
