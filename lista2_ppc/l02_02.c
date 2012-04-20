@@ -1,4 +1,4 @@
-//Exercício 2
+//Início Exercício 2
 #include<stdio.h> 
 #include<stdlib.h>
 
@@ -20,3 +20,4 @@ int main() {
 	printf("\n%d elementos pares em A\n",cont);
 	return 0;
 }
+//Fim Exercício 2

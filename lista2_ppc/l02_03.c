@@ -1,4 +1,4 @@
-//Exercício 1
+//Início Exercício 3 
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -26,4 +26,4 @@ int main(){
 		}
 	return 0;
 }
-//Fim
+//Fim Exercício 3

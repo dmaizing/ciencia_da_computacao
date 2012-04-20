@@ -1,4 +1,4 @@
-//Exercício 4
+//Início Exercício 4
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -24,4 +24,4 @@ int main(){
 	printf("\nO produto escalar de A*B = %d\n",sc);
 	return 0;
 }
-//Fim
+//Fim Exercício 4

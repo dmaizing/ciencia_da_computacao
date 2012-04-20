@@ -1,4 +1,4 @@
-//Exercício 5
+//Início Exercício 5
 #include<stdlib.h>
 #include<stdio.h>
 
@@ -25,4 +25,4 @@ int main()
 	printf("\nVoce digitou %d elementos pares e %d impares.\n",par,impar);
 	return 0;
 }
-//Fim
+//Fim Exercício 5

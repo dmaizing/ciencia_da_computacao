@@ -1,0 +1,219 @@
+/*
+Lista de Exercício 2 - Prática de Programação em C - 2012
+Aluno: Rafael de Lima Franco - RA 911208365
+Sistemas de Informação - Memorial - Noite
+*/
+//Início Exercício 1
+#include<stdio.h> 
+#include<stdlib.h>
+
+/*
+Construa um programa que leia um vetor A de 10 elementos reais, calcule a soma
+e a média dos 10 elementos, apresentando o resultado.
+*/
+
+int main()
+{
+	float a[10],soma,media;
+	int i;
+	printf("Este programa prentende capturar 10 elementos, calcular a soma destes e apresentar o resultado e a media do mesmo.\n\n\n");
+	for(i=0;i<=9;i++){
+		printf("Digite o valor de A[%i]=",i+1);
+		scanf("%f",&a[i]);
+		soma=soma+a[i];
+	}
+	printf("\nResultado SOMA = %f\n",soma);
+	media=soma/2;
+	printf("\nResultado MEDIA = %f\n",media);
+	return 0;
+}
+//Fim Exercício 1
+//Início Exercício 2
+#include<stdio.h> 
+#include<stdlib.h>
+
+/*
+Escreva um programa que leia um vetor A com 15 elementos numéricos inteiros e
+apresente o total de elementos pares existentes em A.
+*/
+
+int main() {
+	int i,a[15],cont;
+	cont=0;
+	printf("Este programa prentende capturar 15 elementos e apresentar o total de elementos pares que foram apresentados.\n\n\n");
+	for(i=0;i<=14;i++){
+		printf("Digite o valor de A[%d]=",i+1);
+		scanf("%d",&a[i]);
+		if (a[i]%2==0) 
+		cont=cont+1;
+	}
+	printf("\n%d elementos pares em A\n",cont);
+	return 0;
+}
+//Fim Exercício 2
+//Início Exercício 3 
+#include<stdio.h>
+#include<stdlib.h>
+
+/*
+Elaborar um programa que leia dois vetores A e B com 10 elementos reais (float)
+cada. Construir um vetor C também com 10 elementos que seja formado pelo
+quadrado da soma dos elementos correspondentes de A e B e apresente o
+resultado.
+*/
+
+int main(){
+	float a[10],b[10],c[10],x;
+	int i;
+	printf("Este programa prentende capturar 10 elementos de A e B, construir 10 elementos C que resultam do quadrado da soma da A e B.\n\n\n");
+	for(i=0;i<=9;i++){
+		x=0;
+		printf("Digite o valor de A[%d]=",i+1);
+		scanf("%f",&a[i]);
+		printf("Digite o valor de B[%d]=",i+1);
+		scanf("%f",&b[i]);
+		c[i]=(a[i]+b[i])*(a[i]+b[i]);
+		}
+	for(i=0;i<=9;i++){
+		printf("O valor de C[%d] = %f\n",i+1,c[i]);
+		}
+	return 0;
+}
+//Fim Exercício 3
+//Início Exercício 4
+#include<stdio.h>
+#include<stdlib.h>
+
+/*
+O produto escalar de dois vetores (matemáticos), v=[v1,v2,v3,...,vn] e
+u=[u1,u2,u3,...,un], é dado por v*u=v1*u1+v2*u2+v3*u3+...+un*vn .
+Escreva um programa que leia dois vetores A e B de dez elementos cada e
+apresente como resultado o cálculo do produto escalar entre A e B.
+*/
+
+int main(){
+	int i,a[10],b[10],c[10],sc;
+	sc=0;
+	printf("Este programa prentende capturar o produto escalar de A*B=A1*B1,A2*B2,A3*B3,...,An*bn.\n\n\n");
+	for(i=0;i<=9;i++){
+		printf("Digite o valor de A[%d]=",i+1);
+		scanf("%d",&a[i]);
+		printf("Digite o valor de B[%d]=",i+1);
+		scanf("%d",&b[i]);
+		c[i]=a[i]*b[i];
+		sc=sc+c[i];
+	}
+	printf("\nO produto escalar de A*B = %d\n",sc);
+	return 0;
+}
+//Fim Exercício 4
+//Início Exercício 5
+#include<stdlib.h>
+#include<stdio.h>
+
+/*
+Construir um programa que leia um vetor A de 30 elementos do tipo inteiro. Ao final
+do programa apresentar a quantidade de elementos pares e ímpares existentes em
+A.
+*/
+
+int main()
+{
+	int a[30],i,par,impar;
+	par=0;
+	impar=0;
+	printf("Este programa prentende capturar 30 elementos e mostrar a quantidade de pares e impares.\n\n\n");
+	for(i=0;i<=29;i++){
+		printf("Digite o valor de A[%d]=",i+1);
+		scanf("%d",&a[i]);
+		if (a[i]%2==0)
+		par=par+1;
+		else
+		impar=impar+1;
+	}	
+	printf("\nVoce digitou %d elementos pares e %d impares.\n",par,impar);
+	return 0;
+}
+//Fim Exercício 5
+//Início Exercício 6
+#include<stdlib.h>
+#include<stdio.h>
+
+/*
+Escreva um programa que que calcule a tabuada de um número qualquer de 1 a
+10 e armazene os resultados em um vetor A (de 10 elementos). Apresente os
+elementos do vetor A .
+*/
+
+int main(){
+	int i,a[10],n;
+	printf("Este programa prentende capturar 1 elemento e mostrar sua tabuada de 1 a 10.\n\n\n");
+	printf("Digite um valor inteiro=");
+	scanf("%d",&n);
+	for(i=0;i<=9;i++){
+		a[i]=n*(i+1);
+	}
+	for(i=0;i<=9;i++){
+		printf("%d x %d = %d \n",n,i+1,a[i]);
+	}
+	return 0;
+}
+//Fim Exercício 6
+//Início Exercício 7
+#include<stdlib.h>
+#include<stdio.h>
+
+/*
+Elabore um programa que leia 12 elementos inteiros de um vetor A . Construa um
+vetor B também de 12 elementos inteiros através da seguinte regra: todo elemento
+ímpar de A deve ser multiplicado por 2; caso contrário (para os elementos pares)
+os elementos de A devem permanecer inalterados. Apresente no final os elementos
+de B.
+*/
+
+int main()
+{
+	int a[12],b[12],i;
+	printf("Este programa prentende capturar 12 elementos A e construir 12 elementos B sendo que pra cada elemento A impar o correspondente B sera multiplicado por 2 e os elementos pares de A serao identicos ao correspondente B.\n\n\n");
+	for(i=0;i<=11;i++){
+		printf("Digite o valor de A[%d]",i+1);
+		scanf("%d",&a[i]);
+		if (a[i]%2==0)
+		b[i]=a[i];
+		else
+		b[i]=a[i]*2;
+	}
+	for(i=0;i<=11;i++){
+		printf("Valor de B[%d] = %d\n",i+1,b[i]);
+	}
+	return 0;
+}
+//Fim Exercício 7
+//Início Exercício 8
+#include<stdio.h>
+#include<stdlib.h>
+
+/*
+Elabore um programa que leia dois vetores A e B com 10 elementos inteiros cada.
+Construir um vetor C de mesmo comprimento (10 elementos) que seja formado
+pelo quadrado da soma dos elementos correspondentes dos vetores A e B.
+Apresente os elementos de C.
+*/
+
+int main()
+{
+	int i,a[10],b[10],c[10];
+	printf("Este programa prentende capturar 10 elementos de A e B e construir 10 elementos C=(A+B)*(A+B).\n\n\n");
+	for(i=0;i<=9;i++){
+		printf("Digite o valor de A[%d] = ",i+1);
+		scanf("%d",&a[i]);
+		printf("Digite o valor de B[%d] = ",i+1);
+		scanf("%d",&b[i]);
+		c[i]=(a[i]+b[i])*(a[i]+b[i]);
+	}
+	for(i=0;i<=9;i++){
+		printf("Valor de C[%d] = %d\n",i+1,c[i]);
+	}
+	return 0;
+}
+//Fim Exercício 8
