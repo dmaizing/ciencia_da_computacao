@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 			exit(-1);
 		}
 	}
-	printf("Rafael etc avalizando threads com vc!\n");
 	a=getchar();
+	printf("Rafael etc avaliando threads com vc!\n");
 	exit(0);
 }
