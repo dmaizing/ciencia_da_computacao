@@ -1,0 +1,2 @@
+Para compilar usando o gcc é preciso chamar o lib <pthread.h> no comando assim:
+$ gcc -lpthread pthread.c -o pthread
