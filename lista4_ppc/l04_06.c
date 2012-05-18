@@ -12,9 +12,10 @@ int main ()
 	for(i=0;i<=c-3;i++) {
 		copia2[i]=frase[i+3];
 	}
-	printf("String copiada com strcpy():\n");
+	printf("String original: '%s'\n\n",frase);
+	printf("String copiada a partir do elemento 4 com strcpy():\n");
 	puts(copia1);
-	printf("String copiada com for:\n");
+	printf("String copiada a partir do elemento 4 com for:\n");
 	puts(copia2);
 	return 0;
 }
