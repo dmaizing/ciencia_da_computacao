@@ -18,6 +18,6 @@ int main ()
 			l=l;
 		}
 	}
-	printf("A frase '%s' tem %d caracteres e %d caracteres 'a' e 'c'\n",frase,c,l);
+	printf("A frase '%s' tem %d caracteres no total e %d caracteres 'a' e 'c'\n",frase,c,l);
 	return 0;
 }
