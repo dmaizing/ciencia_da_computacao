@@ -18,6 +18,6 @@ int main ()
 			l=l;
 		}
 	}
-	printf("Total de letras 'a' e 'c' em '%s' = %d\n",frase,l);
+	printf("A frase '%s' tem %d caracteres e %d caracteres 'a' e 'c'\n",frase,c,l);
 	return 0;
 }
