@@ -13,7 +13,7 @@ int main ()
 	for(i=0;i<=c;i++) {
 		copia2[i]=palavra[i];
 	}
-	printf("String copiada com strcpy:\n");
+	printf("String copiada com strcpy():\n");
 	puts(copia1);
 	printf("String copiada com for:\n");
 	puts(copia2);

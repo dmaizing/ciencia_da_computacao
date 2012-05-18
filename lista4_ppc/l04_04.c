@@ -9,13 +9,6 @@ int main ()
 	int i,c,l=0;
 	printf("Entre com a frase: ");
 	gets(frase);
-	//Usando o strpbrk()
-	//char * pch;
-	//pch=strpbrk(frase, letras);
-	//while(pch != NULL) {
-	//	c+=1;
-	//	pch=strpbrk(pch+1, letras);
-	//}
 	c=strlen(frase);
 	for(i=0;i<=c;i++) {
 		clone[i]=frase[i];
