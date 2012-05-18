@@ -1,5 +1,5 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int main()
 {
@@ -24,5 +24,5 @@ int main()
 			printf("e[%d][%d] = %d\n",i,j,e[i][j]);
 		}
 	}
-	return 0;	
+	return 0;
 }

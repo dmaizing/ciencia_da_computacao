@@ -1,5 +1,5 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int main()
 {
@@ -19,5 +19,5 @@ int main()
 		}
 	}
 	printf("t = %d\n",t);
-	return 0;	
+	return 0;
 }
